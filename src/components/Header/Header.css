@@ -1,0 +1,16 @@
+div > .inNav {
+    display: inline-block;
+}
+
+.navStyle {
+    display: "flex";
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: "space-around";
+    border-bottom: ".2rem solid black";
+    border: 1px solid red;
+    padding: ".5rem";
+    width: "90%";
+    margin: "auto";
+}
+

@@ -1,0 +1,5 @@
+.headshot {
+    min-height: 40vh;
+    min-width: 25vh;
+    border-radius: 3rem, 3rem, 3rem, 3rem /  2rem, 2rem, 2rem, 2rem ;
+}
