@@ -21,11 +21,9 @@ export default function About() {
 
     function loaded() {
         return(
-            <div>
-                <h2>{about.name}</h2>
-                <h3>{about.email}</h3>
+            <div className="about-container">
                 <img className="headshot" src={about.headshot} alt="Failed" />
-                <p>{about.bio}</p>
+                <p className="bio">{about.bio}</p>
             </div>
         )
     }

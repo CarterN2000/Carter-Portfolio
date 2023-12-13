@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 export default function Header(props) {
     return (
         <header>
-        <h1>Carter Nichols - Fullstack Developer</h1>
+        {/* <h1>Carter Nichols - Fullstack Developer</h1> */}
         <nav className="navStyle">
           <Link to="/">
             <div className="inNav">HOME</div>

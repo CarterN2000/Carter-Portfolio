@@ -5,7 +5,7 @@ export default function Home() {
         <div>
             <h4>Hey there!</h4>
             <h2>I'm Carter, the <span>Fullstack Developer</span></h2>
-            <img className="headshot" src='./Headshot' alt="Carter" />  
+            <img className="headshot" src="./Headshot.png"/>  
         </div>
 
     )

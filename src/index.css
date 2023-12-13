@@ -12,3 +12,10 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 } */
+
+body {
+  background-color: #02172d;
+  background: linear-gradient(90deg, rgba(2,23,45,1) 0%, rgba(10,38,69,1) 50%, rgba(6,47,89,1) 100%);
+  color: #bfbfbf;
+  font-family: 'Roboto Slab', serif;
+}
