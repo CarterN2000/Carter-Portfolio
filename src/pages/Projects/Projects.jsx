@@ -24,7 +24,7 @@ export default function Projects() {
                 return(
                     <div key={idx}>
                         <h1>{p.name}</h1>
-                        <img src={p.image} alt="Project Image" />
+                        <img className="project-images" src={p.image} alt="Project Image" />
                         <a href={p.git}>
                             <button>Github</button>
                         </a>

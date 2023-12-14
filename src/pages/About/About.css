@@ -3,6 +3,7 @@
     max-width: 30vh;
     border-radius: 3rem;
     border: 2px solid black;
+    user-select: none;
 }
 
 .bio {
@@ -11,12 +12,11 @@
     padding: 1rem;
     font-size: large;
     justify-content: center;
-    align-items: center;
+    align-self: center;
 }
 
 .about-container {
     display: flex;
     margin-top: 2vh;
-    
 
 }
