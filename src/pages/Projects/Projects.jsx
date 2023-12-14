@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react'
+import './Projects.css'
 
 export default function Projects() {
 
@@ -10,30 +11,36 @@ export default function Projects() {
             const data = await response.json()
             setProjects(data)
         }
-        catch(err) {
+        catch (err) {
             console.log(err)
         }
     }
-    useEffect(() => { 
-        fetchProjects() 
+    useEffect(() => {
+        fetchProjects()
     }, []);
 
-    function loaded () {
+    function loaded() {
         return (
-            projects.map(function(p, idx) {
-                return(
-                    <div key={idx}>
-                        <h1>{p.name}</h1>
-                        <img className="project-images" src={p.image} alt="Project Image" />
-                        <a href={p.git}>
-                            <button>Github</button>
-                        </a>
-                        <a href={p.live}>
-                            <button>Live site</button>
-                        </a>
-                    </div>
-                )
-            })
+            <div className="all-projects">
+                {projects.map(function (p, idx) {
+                    return (
+                        <div key={idx} className="projects-container">
+                            <img className="project-images" src={p.image} alt="Project Image" />
+                            <section className='under-image'>
+                                <h1>{p.name}</h1>
+                                <div className="button-links">
+                                    <a href={p.git}>
+                                        <button>Github</button>
+                                    </a>
+                                    <a href={p.live}>
+                                        <button>Live site</button>
+                                    </a>
+                                </div>
+                            </section>
+                        </div>
+                    )
+                })}
+            </div>
         )
     }
 
